@@ -1,17 +1,21 @@
 // NavBar.jsx
-import React from 'react';
-import NavItem from './NavItem';
-import '../styling/NavBar.css'; // Import the CSS file
+import Link from 'next/link';
+import styles from '../styling/NavBar.module.css'; // Import CSS module
 
 const NavBar = () => {
     return (
-        <header className="navbar">
-            <nav className="container">
-                <div className="logo">My Resume</div>
+        <header className={styles.header}>
+            <nav className={styles.navLinks}>
                 <ul>
-                    <NavItem href="#about">About</NavItem>
-                    <NavItem href="#projects">Projects</NavItem>
-                    <NavItem href="#contact">Contact</NavItem>
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link href="/projects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">Contact</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
