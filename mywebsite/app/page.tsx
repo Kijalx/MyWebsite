@@ -15,7 +15,7 @@ const Home = () => {
 
                 <section id="projects" className="section">
                     <h1>Projects</h1>
-                    <p>Here are some of the projects I've worked on ...</p>
+                    <p>Here are some of the projects I&apos;ve worked on ...</p>
                 </section>
 
                 <section id="contact" className="section">
