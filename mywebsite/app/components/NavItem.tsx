@@ -1,4 +1,4 @@
-const NavItem = ({ href, children }) => {
+const NavItem = ({ href, children }: { href: string; children: React.ReactNode }) => {
     return (
         <li>
             <a href={href} className="hover:underline text-black">
