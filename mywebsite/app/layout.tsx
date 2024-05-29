@@ -1,10 +1,13 @@
-// layout.tsx
-import React from "react";
+import React, { ReactNode } from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <html>
       <head>
@@ -17,13 +20,12 @@ const Layout = ({ children }) => {
             <NavBar />
             {children}
             <footer className="footer">
-          <div className="container mx-auto">
-            <p>&copy; 2024 My Name. All rights reserved.</p>
-          </div>
-        </footer>
+              <div className="container mx-auto">
+                <p>&copy; 2024 My Name. All rights reserved.</p>
+              </div>
+            </footer>
           </main>
         </NextUIProvider>
-        
       </body>
     </html>
   );
