@@ -8,26 +8,20 @@
 }
 
 .name-email-container {
-    margin-bottom: 0.5rem;
-}
-
-:root {
-    --name-margin-bottom: 0.25rem;
-    --name-font-size: 1.25rem;
-    --name-font-weight: bold;
-    --email-margin-top: 0;
-    --email-font-size: 0.875rem;
-    --email-color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .name {
-    margin-bottom: var(--name-margin-bottom);
-    font-size: var(--name-font-size);
-    font-weight: var(--name-font-weight);
+    margin-bottom: 0.1rem; /* Adjust to reduce space */
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .email {
-    margin-top: var(--email-margin-top);
-    font-size: var(--email-font-size);
-    color: var(--email-color);
+    margin-top: 0; /* Ensure no top margin */
+    font-size: 0.875rem;
+    color: #666;
 }
