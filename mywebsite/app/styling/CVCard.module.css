@@ -1,18 +1,14 @@
 .card {
     opacity: 0;
-    /* Initially hide the card */
     transition: opacity 0.4s ease-in;
-    /* Define transition for opacity */
 }
 
 .visible {
     opacity: 1;
-    /* Show the card with a fade-in effect */
 }
 
 .name-email-container {
     margin-bottom: 0.5rem;
-    /* Adjust the margin to your desired spacing */
 }
 
 :root {
