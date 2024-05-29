@@ -9,7 +9,7 @@ import picon from '../icons/projects.png';
 import cicon from '../icons/contact.png';
 const NavBar = () => {
     return (
-        <Navbar isBordered variant="sticky">
+        <Navbar isBordered>
             <NavbarMenuToggle />
             <NavbarBrand className={styles.brand}>
                 MyApp

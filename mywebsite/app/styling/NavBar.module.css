@@ -25,6 +25,7 @@
     padding: 1rem;
     z-index: 100;
     box-sizing: border-box;
+    overflow-y: hidden; /* Hide the vertical scrollbar */
 }
 
 .menuContent > * {
