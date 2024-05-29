@@ -5,15 +5,13 @@ import NavBar from "./components/NavBar";
 
 interface LayoutProps {
   children: ReactNode;
-  pageTitle: string; // Add pageTitle prop
 }
 
-const Layout = ({ children}: LayoutProps) => {
-
+const Layout = ({ children }: LayoutProps) => {
   return (
     <html>
       <head>
-        <title>Portfolio</title>
+        <title>Your Page Title</title>
         <link rel="stylesheet" href="globals.css" />
       </head>
       <body>
@@ -23,7 +21,7 @@ const Layout = ({ children}: LayoutProps) => {
             {children}
             <footer className="footer">
               <div className="container mx-auto">
-                <p>&copy; 2024 Aleksander Kijewski. All rights reserved.</p>
+                <p>&copy; 2024 My Name. All rights reserved.</p>
               </div>
             </footer>
           </main>
