@@ -1,0 +1,37 @@
+.card {
+    opacity: 0;
+    /* Initially hide the card */
+    transition: opacity 0.4s ease-in;
+    /* Define transition for opacity */
+}
+
+.visible {
+    opacity: 1;
+    /* Show the card with a fade-in effect */
+}
+
+.name-email-container {
+    margin-bottom: 0.5rem;
+    /* Adjust the margin to your desired spacing */
+}
+
+:root {
+    --name-margin-bottom: 0.25rem;
+    --name-font-size: 1.25rem;
+    --name-font-weight: bold;
+    --email-margin-top: 0;
+    --email-font-size: 0.875rem;
+    --email-color: #666;
+}
+
+.name {
+    margin-bottom: var(--name-margin-bottom);
+    font-size: var(--name-font-size);
+    font-weight: var(--name-font-weight);
+}
+
+.email {
+    margin-top: var(--email-margin-top);
+    font-size: var(--email-font-size);
+    color: var(--email-color);
+}

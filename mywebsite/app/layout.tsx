@@ -21,7 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
             {children}
             <footer className="footer">
               <div className="container mx-auto">
-                <p>&copy; 2024 My Name. All rights reserved.</p>
+                <p>&copy; 2024 Aleksander Kijewski. All rights reserved.</p>
               </div>
             </footer>
           </main>

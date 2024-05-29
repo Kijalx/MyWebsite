@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Projects(){
     return(
-        <main>
-            <h2>Projects</h2>
-        </main>
+        <div className="flex flex-col min-h-screen">
+            <section id="about" className="section">
+                <h1>Projects</h1>
+            </section>
+        </div>
     )
 }

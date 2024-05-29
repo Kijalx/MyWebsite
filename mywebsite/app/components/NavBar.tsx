@@ -1,4 +1,3 @@
-// components/NavBar.tsx
 import Link from 'next/link';
 import styles from '../styling/NavBar.module.css';
 import Image from 'next/image';
@@ -12,7 +11,7 @@ const NavBar = () => {
         <Navbar isBordered>
             <NavbarMenuToggle />
             <NavbarBrand className={styles.brand}>
-                MyApp
+                Website
             </NavbarBrand>
             <NavbarContent className={styles.navContent}>
                 <NavbarItem>

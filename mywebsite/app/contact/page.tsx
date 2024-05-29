@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Contact(){
     return(
-        <main>
-            <h2>Contact</h2>
-        </main>
+        <div className="flex flex-col min-h-screen">
+            <section id="about" className="section">
+                <h1>Contact</h1>
+            </section>
+        </div>
     )
 }
