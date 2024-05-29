@@ -1,4 +1,6 @@
-html, body {
+/* styling/page.css */
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -12,7 +14,9 @@ html, body {
     padding: 6rem 2rem;
     padding-top: 8rem;
     background-color: #000;
+    /* Dark background */
     color: #fff;
+    /* White text */
 }
 
 .main-section h1 {
@@ -50,8 +54,10 @@ html, body {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
-    width: 100%; /* Occupy full width */
+    margin-top: auto;
+    /* Push footer to the bottom */
+    width: 100%;
+    /* Occupy full width */
 }
 
 .footer p {

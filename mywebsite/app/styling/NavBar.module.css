@@ -1,32 +1,46 @@
-.header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: right; /* Align text to the right */
-}
-
-.navLinks {
-    display: inline; /* Display the navigation links horizontally */
-}
-
-.navLinks ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Center text within the navbar */
-}
-
-.navLinks li {
-    display: inline; /* Display list items inline */
-    margin-right: 20px;
-}
-
-.navLinks a {
-    text-decoration: none;
-    color: #fff;
+/* styling/NavBar.module.css */
+.brand {
     font-weight: bold;
 }
 
-.navLinks a:hover {
-    text-decoration: underline;
+.navContent {
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menuContent {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.menuContent > * {
+    margin-bottom: 1rem;
+}
+
+.menLink {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
