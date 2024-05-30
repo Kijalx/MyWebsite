@@ -1,4 +1,3 @@
-'use client'
 import React, { useState } from 'react';
 import {
     Card,
@@ -36,11 +35,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
         }
     };
 
+    const showReadMoreButton = description.length > 220;
+
     return (
-            <Card style={{ height: '400px', width: '400px', maxWidth: '100%' }}>
+            <Card style={{ height: '350px', width: '350px', maxWidth: '100%' }}>
                 <CardHeader style={{fontSize: '35px'}}>{title}</CardHeader>
                 <CardBody style={{ fontSize: '20px', fontWeight: 'normal', overflow: 'hidden' }}>
-                    <p>{description.length > 50 ? description.substring(0, 290) + '...' : description}</p>
+                    <p>{description.length > 220 ? description.substring(0, 220) + '...' : description}</p>
                     {imageUrl && <img src={imageUrl} alt={title} style={{ maxWidth: '100%', height: 'auto' }} />}
                     <Spacer y={5}/>
                 </CardBody>
@@ -58,7 +59,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
                         </>
                     )}
                     <Spacer x={2} />
-                    <Button onPress={onOpen} className="max-w-fit">Read more</Button>
+                    {showReadMoreButton && (
+                        <Button onPress={onOpen} className="max-w-fit">Read more</Button>
+                    )}
                 </CardFooter>
                 <Modal size="4xl" isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={false} isKeyboardDismissDisabled={true}>
                     <ModalContent style={{ backgroundColor: '#333', color: '#fff' }}>

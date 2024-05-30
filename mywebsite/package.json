@@ -16,6 +16,7 @@
     "@nextui-org/react": "^2.4.0",
     "@nextui-org/system": "^2.2.0",
     "@nextui-org/theme": "^2.2.4",
+    "card": "^2.5.4",
     "framer-motion": "^11.2.8",
     "next": "14.2.3",
     "next-navigation": "^1.0.6",

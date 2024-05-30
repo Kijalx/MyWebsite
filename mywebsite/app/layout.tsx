@@ -11,7 +11,11 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <html>
       <head>
-        <title>Your Page Title</title>
+      <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+        <title>Loading</title>
         <link rel="stylesheet" href="globals.css" />
       </head>
       <body>
