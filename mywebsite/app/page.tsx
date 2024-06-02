@@ -1,5 +1,3 @@
-
-import Home from './components/Home';
 import Layout from "./layout";
 import './styling/page.css';
 export default function Page() {
