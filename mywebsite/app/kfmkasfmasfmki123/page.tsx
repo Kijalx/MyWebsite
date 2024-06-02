@@ -10,7 +10,7 @@ export default function Login() {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('https://adminforportfolio.vercel.app/login', {
+            const response = await fetch(authLink, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
