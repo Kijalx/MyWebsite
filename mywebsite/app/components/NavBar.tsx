@@ -11,7 +11,7 @@ const NavBar = () => {
         <Navbar isBordered>
             <NavbarMenuToggle />
             <NavbarBrand className={styles.brand}>
-                Website
+                aleks.dev
             </NavbarBrand>
             <NavbarContent className={styles.navContent}>
                 <NavbarItem>
@@ -27,12 +27,11 @@ const NavBar = () => {
                     <Link href="/contact" className={styles.navLink}>Contact</Link>
                 </NavbarItem>
             </NavbarContent>
+
             <NavbarMenu className={styles.menuContent}>
                 <NavbarMenuItem>
-                    
                     <Link href="/" className={styles.menLink}> <Image src={hicon} alt="Icon" width={24} height={24} className={styles.icon} /> Home</Link>
                 </NavbarMenuItem>
-
                 <NavbarMenuItem>
                     <Link href="/about" className={styles.menLink}><Image src={aicon} alt="Icon" width={24} height={24} className={styles.icon} /> About</Link>
                 </NavbarMenuItem>
