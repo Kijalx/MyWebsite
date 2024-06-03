@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 import NavBar from "./components/NavBar";
-
 interface LayoutProps {
   children: ReactNode;
 }

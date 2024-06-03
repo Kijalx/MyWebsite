@@ -1,25 +1,29 @@
 'use client'
 import React, { useState } from 'react';
 import '../styling/page.css';
-
 export default function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const authLink = process.env.AUTH;
 
-    const handleLogin = async () => {
+    const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        
+        if (!process.env.NEXT_PUBLIC_AUTH) {
+            setError('Authentication link is not defined');
+            return;
+        }
         try {
-            const response = await fetch(authLink, {
+            const response = await fetch(process.env.NEXT_PUBLIC_AUTH, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ username, password })
             });
-            
+
             const data = await response.json();
-    
+
             if (response.ok) {
                 // Login successful, log message
                 console.log("Login successful");
@@ -29,12 +33,11 @@ export default function Login() {
                 console.error('Login failed:', data.message);
                 setError(data.message);
             }
-            console.log("DAta", data)
+            console.log("Data", data);
         } catch (error) {
             console.error('Login error:', error);
             setError('An error occurred during login');
         }
-        
     };
 
     return (
