@@ -10,7 +10,7 @@ const Dashboard: React.FC = () => {
     const [error, setError] = useState('');
     const handleCreateProject = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        
+        //
         if (!process.env.NEXT_PUBLIC_PROJ) {
             setError('Authentication link is not defined');
             return;
